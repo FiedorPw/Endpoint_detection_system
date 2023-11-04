@@ -1,0 +1,32 @@
+<LogEntry>
+    <Timestamp>2023-11-04T15:23:07Z</Timestamp>
+    <EventID>1003</EventID>
+    <EventName>MaliciousActivityDetected</EventName>
+    <SourceIP>192.168.1.105</SourceIP>
+    <DestinationIP>172.16.254.1</DestinationIP>
+    <SourcePort>4444</SourcePort>
+    <DestinationPort>80</DestinationPort>
+    <Protocol>TCP</Protocol>
+    <Payload>GET /malware.exe HTTP/1.1</Payload>
+    <ThreatLevel>High</ThreatLevel>
+    <ThreatType>MalwareDownload</ThreatType>
+    <ActionTaken>ConnectionBlocked</ActionTaken>
+    <User>john_doe</User>
+    <Process>
+        <Name>powershell.exe</Name>
+        <ID>4560</ID>
+        <Path>C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Path>
+    </Process>
+    <Signature>
+        <ID>MALWARE-CNC Win.Trojan.Malicious-activity</ID>
+        <Category>A Network Trojan was detected</Category>
+    </Signature>
+    <File>
+        <Name>malware.exe</Name>
+        <Path>C:\Users\john_doe\Downloads\</Path>
+    </File>
+    <RegistryKey></RegistryKey>
+    <RegistryValue></RegistryValue>
+    <Status>Reported</Status>
+    <Remarks>Detected a suspicious file download attempt via PowerShell.</Remarks>
+</LogEntry>
