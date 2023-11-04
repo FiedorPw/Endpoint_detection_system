@@ -1,8 +1,8 @@
-# KRYCY_Lab1
+KRYCY_Lab1
 
 
 
-## TO DO
+TO DO
 1.wczytywanie
 2.detekcja i analiza plików:
     a.PCAP
