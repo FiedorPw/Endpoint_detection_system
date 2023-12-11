@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request
 
+
 app = Flask(__name__)
 
 logi = ["cynk by elkaSysMon","bieniasz zapodał projekt" ,"sepczuk zhakował windowsa", "komandos uwalił 69% ludzi"]
