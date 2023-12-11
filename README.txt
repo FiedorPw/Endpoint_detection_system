@@ -6,6 +6,8 @@ TO DO
 1.wczytywanie
     a.PCAP✅
     b.TXT / Logi
+    c.json✅
+    d.xml✅
 2.detekcja i analiza plików:
     a.Reguły jako funkcje języka Python
     b.Wykorzystanie uniwersalnego formatu reguł - SIGMA
