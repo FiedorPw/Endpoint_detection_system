@@ -40,8 +40,18 @@ def read_xml_file(filename):
         print(f"Error parsing the XML file: {e}")
         return None
 
+def read_txt_file(filename):
+    try:
+        with open(filename, 'r') as file:
+            log_to_file("read_txt_file read file")
+            return file.read()
+    except IOError as e:
+        print(f"Error reading the TXT file: {e}")
+        return None
+
+
 def log_to_file(message):
-    with open('ourLog.log', 'a') as file:
+    with open('OldTestData/ourLog.log', 'a') as file:
         file.write(f'info: {message}\n')
 
 def import_pcap(filename):
@@ -50,13 +60,15 @@ def import_pcap(filename):
     return capture
 
 
-
-read_json = read_json_file(f'json_read_test.log')
+read_json = read_json_file('OldTestData/json_read_test.log')
 print("test jsona",read_json)
 
 
-read_xml = read_xml_file('AC(analizatorCyberzagrozen)/OldTestData/xml_read_test.log')
-print("test xmla",read_json)
+read_xml = read_xml_file('OldTestData/xml_read_test.log')
+print("test xmla",read_xml)
+
+read_txt = read_txt_file('OldTestData/text_read_test.log')
+print("test txt", read_txt)
 
 capture = import_pcap('Network.pcap')
 
