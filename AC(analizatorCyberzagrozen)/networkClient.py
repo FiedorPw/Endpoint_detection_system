@@ -1,3 +1,10 @@
+'''
+GEN.MGMT.5 Wprowadzić komunikację ze Zdalnym Kolektorem Zdarzeń.
+
+GEN.MGMT.5.1 Metodą komunikacji aplikacji głównej ze Zdalnym Kolektorem Zdarzeń alertów jest
+REST API.
+'''
+
 import requests
 
 # GET

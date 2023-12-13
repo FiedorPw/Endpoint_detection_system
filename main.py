@@ -37,7 +37,7 @@ read_json = read_json_file(f'json_read_test.log')
 print("test jsona",read_json)
 
 
-read_xml = read_xml_file('AC(analizatorCyberzagrozen)/xml_read_test.log')
+read_xml = read_xml_file('AC(analizatorCyberzagrozen)/OldTestData/xml_read_test.log')
 print("test xmla",read_json)
 
 capture = import_pcap('Network.pcap')
