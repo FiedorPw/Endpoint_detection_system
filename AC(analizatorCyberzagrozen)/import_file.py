@@ -59,6 +59,9 @@ def import_pcap(filename):
     log_to_file("import_pcap read file")
     return capture
 
+def analyze_pcap_packets(capture):
+    for packet in capture:
+        print(packet)
 
 read_json = read_json_file('OldTestData/json_read_test.log')
 print("test jsona",read_json)
@@ -70,7 +73,7 @@ print("test xmla",read_xml)
 read_txt = read_txt_file('OldTestData/text_read_test.log')
 print("test txt", read_txt)
 
-capture = import_pcap('Network.pcap')
+#capture = import_pcap('Network.pcap')
 
 
 #test pcap

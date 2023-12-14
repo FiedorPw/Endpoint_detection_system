@@ -4,8 +4,8 @@ KRYCY_Lab1
 
 TO DO
 1.wczytywanie
-    a.PCAP✅
-    b.TXT / Logi
+    a.PCAP✅ -> filtrowanie
+    b.TXT✅ / Logi
     c.json✅
     d.xml✅
 2.detekcja i analiza plików:
