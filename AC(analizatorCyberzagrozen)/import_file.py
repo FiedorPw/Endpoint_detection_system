@@ -17,7 +17,6 @@ wczytującej plik PCAP.
 '''
 
 import pyshark
-import click
 import xml.etree.ElementTree as ET
 import json
 
@@ -35,7 +34,7 @@ def read_xml_file(filename):
     try:
         tree = ET.parse(filename)
         log_to_file("read_xml_file read file")
-        return tree
+        return tree.getroot()
     except ET.ParseError as e:
         print(f"Error parsing the XML file: {e}")
         return None
@@ -54,20 +53,23 @@ def log_to_file(message):
     with open('OldTestData/ourLog.log', 'a') as file:
         file.write(f'info: {message}\n')
 
-def import_pcap(filename):
-    capture = pyshark.FileCapture(filename)
-    log_to_file("import_pcap read file")
+def import_pcap(filename, display_filter=None):
+    if display_filter:
+        capture = pyshark.FileCapture(filename, display_filter=display_filter)
+        log_to_file("import_pcap read file with display filter: {display_filter}")
+    else:
+        capture = pyshark.FileCapture(filename)
     return capture
 
 def analyze_pcap_packets(capture):
     for packet in capture:
         print(packet)
 
-read_json = read_json_file('OldTestData/json_read_test.log')
+read_json = read_json_file('OldTestData/test.json')#json_read_test.log
 print("test jsona",read_json)
 
 
-read_xml = read_xml_file('OldTestData/xml_read_test.log')
+read_xml = read_xml_file('OldTestData/test.xml')#xml_read_test.logtest.xml
 print("test xmla",read_xml)
 
 read_txt = read_txt_file('OldTestData/text_read_test.log')
@@ -75,6 +77,24 @@ print("test txt", read_txt)
 
 #capture = import_pcap('Network.pcap')
 
+#if read_xml is not None:
+
+#    for book_element in read_xml.findall('book'):
+#       book_id = book_element.get('id')
+#       author = book_element.find('author').text
+#       title = book_element.find('title').text
+#        genre = book_element.find('genre').text
+#       price = book_element.find('price').text
+#        publish_date = book_element.find('publish_date').text
+#       description = book_element.find('description').text
+
+#        print(f"Book ID: {book_id}")
+#        print(f"Author: {author}")
+#        print(f"Title: {title}")
+#        print(f"Genre: {genre}")
+#        print(f"Price: {price}")
+#        print(f"Publish Date: {publish_date}")
+#        print(f"Description: {description}\n")
 
 #test pcap
 
