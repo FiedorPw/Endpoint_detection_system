@@ -3,6 +3,8 @@ która pozwoli na realizację
  wskazanych wymagań. Moduł do tworzenia aplikacji CLI - Click'''
 import click
 import pythonAnalyzer as AN
+import Sigma_analyzer as SIGMA
+import txt_log_analyzer as TLA
 from click_shell import shell
 
 # @click.group()  # no longer
@@ -51,6 +53,49 @@ def use_python_rule(path,load_rules,rule_name):
         print("Load rules first")
     else:
         AN.process_files_with_rules(python_rules,path,rule_name)
+
+#----Scenariusz2----
+@my_app.command()
+@click.option('--pattern')
+@click.option('--file_paths', nargs=-1, type=click.Path(exists=True))
+def grep_command(pattern, file_paths):
+    """Search for PATTERN in each FILE_PATH using grep."""
+    results = TLA.grep_in_files(pattern, file_paths)
+    print(results)
+
+@my_app.command()
+@click.option('--pattern')
+@click.option('--file_paths', nargs=-1, type=click.Path(exists=True))
+def regex_command(pattern, file_paths):
+    """Search for PATTERN in each FILE_PATH using Python regular expressions."""
+    results = TLA.re_search_in_files(pattern, file_paths)
+    print(results)
+
+
+#------SIGMA--------
+@my_app.command()
+@click.option('--evt_log_path',help='Path to evt file to load',type=click.Path(exists=True),nargs=1,required=True)
+@click.option('--sigma_rules_path',help='Path to rules to load',type=click.Path(exists=True),nargs=1,required=True)
+def sigmaEvt(evt_log_path, sigma_rules_path):
+    SIGMA.run_zircolite_evtx(evt_log_path, sigma_rules_path)
+    SIGMA.display_event_data("detected_events.json")
+
+@my_app.command()
+@click.option('--json_log_path',help='Path to json file to load',type=click.Path(exists=True),nargs=1,required=True)
+@click.option('--sigma_rules_path',help='Path to rules to load',type=click.Path(exists=True),nargs=1,required=True)
+def sigmaEvt(json_log_path, sigma_rules_path):
+    SIGMA.run_zircolite_json(json_log_path, sigma_rules_path)
+    SIGMA.display_event_data("detected_events.json")
+
+@my_app.command()
+@click.option('events', type=click.Path(exists=True))
+def display_events_command(events):
+    """Display event data from a JSON file."""
+    if events is not None:
+        SIGMA.display_event_data(events)
+    else:
+        SIGMA.display_event_data("detected_events.json")
+
 
 if __name__ == '__main__':
     my_app()
