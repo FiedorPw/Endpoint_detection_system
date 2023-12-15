@@ -2,10 +2,12 @@
 która pozwoli na realizację
  wskazanych wymagań. Moduł do tworzenia aplikacji CLI - Click'''
 import click
+import os
 import pythonAnalyzer as AN
 import Sigma_analyzer as SIGMA
 import txt_log_analyzer as TLA
 from click_shell import shell
+from PCAP_analyzer import Pcap_analyzer, get_available_pcap_files
 
 # @click.group()  # no longer
 @shell(prompt='my-app > ', intro='Starting my app...')
@@ -95,6 +97,22 @@ def display_events_command(events):
         SIGMA.display_event_data(events)
     else:
         SIGMA.display_event_data("detected_events.json")
+
+#----Scenariusz1----
+@my_app.command()
+@click.option('--pcap_path', prompt='Enter the path to search for PCAP files', type=click.Path(exists=True))
+@click.option('--display_filter', prompt='Enter BPF display filter (press Enter for no filter)', default="")
+def analyze_pcap_interactive(pcap_path, display_filter):
+    """
+    Click command to interactively analyze a PCAP file with filter options.
+    """
+    click.echo("Welcome to interactive PCAP analysis!")
+    # Get the list of available PCAP files
+    available_pcap_files = get_available_pcap_files(pcap_path)
+    pcap_file = click.prompt("Choose a PCAP file", type=click.Choice(available_pcap_files))
+    full_path = os.path.join(pcap_path, pcap_file)
+    Pcap_analyzer(full_path, display_filter)
+
 
 
 if __name__ == '__main__':
