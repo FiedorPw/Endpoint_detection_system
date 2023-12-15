@@ -66,8 +66,8 @@ def use_python_rule(path,load_rules,rule_name):
 #    print(results)
 
 @my_app.command()
-@click.option('--pattern',prompt='Pattern to search')
-@click.option('--file_paths',prompt='Path to file', nargs=1, type=click.Path(exists=True))
+@click.option('--pattern',prompt='Pattern to search',help='Pattern to search')
+@click.option('--file_paths',prompt='Path to file',help='Path to file', nargs=1, type=click.Path(exists=True))
 def grep_command(pattern, file_paths):
     file_path = {file_paths}
     """Search for PATTERN in each FILE_PATH using grep."""
@@ -83,8 +83,8 @@ def grep_command(pattern, file_paths):
 #    print(results)
 
 @my_app.command()
-@click.option('--pattern',prompt='Pattern to search')
-@click.option('--file_paths',prompt='Path to file', nargs=1, type=click.Path(exists=True))
+@click.option('--pattern',prompt='Pattern to search',help='Pattern to search')
+@click.option('--file_paths',prompt='Path to file',help='Path to file', nargs=1, type=click.Path(exists=True))
 def regex_command(pattern, file_paths):
     """Search for PATTERN in each FILE_PATH using Python regular expressions."""
     file_path = {file_paths}
@@ -93,16 +93,16 @@ def regex_command(pattern, file_paths):
 
 #------SIGMA--------
 @my_app.command()
-@click.option('--evt_log_path',help='Path to evt file to load',type=click.Path(exists=True),nargs=1,required=True)
-@click.option('--sigma_rules_path',help='Path to rules to load',type=click.Path(exists=True),nargs=1,required=True)
-def sigmaEvt(evt_log_path, sigma_rules_path):
+@click.option('--evt_log_path',help='Path to evt file to load',prompt='Path to evt file to load',type=click.Path(exists=True),nargs=1,required=True)
+@click.option('--sigma_rules_path',help='Path to rules to load',prompt='Path to rules to load',type=click.Path(exists=True),nargs=1,required=True)
+def sigma_evtx(evt_log_path, sigma_rules_path):
     SIGMA.run_zircolite_evtx(evt_log_path, sigma_rules_path)
     SIGMA.display_event_data("detected_events.json")
 
 @my_app.command()
-@click.option('--json_log_path',help='Path to json file to load',type=click.Path(exists=True),nargs=1,required=True)
-@click.option('--sigma_rules_path',help='Path to rules to load',type=click.Path(exists=True),nargs=1,required=True)
-def sigmaEvt(json_log_path, sigma_rules_path):
+@click.option('--json_log_path',help='Path to json file to load',prompt='Path to json file to load',type=click.Path(exists=True),nargs=1,required=True)
+@click.option('--sigma_rules_path',help='Path to rules to load',prompt='Path to rules to load',type=click.Path(exists=True),nargs=1,required=True)
+def sigma_json(json_log_path, sigma_rules_path):
     SIGMA.run_zircolite_json(json_log_path, sigma_rules_path)
     SIGMA.display_event_data("detected_events.json")
 
@@ -117,8 +117,8 @@ def display_events_command(events):
 
 #----Scenariusz1----
 @my_app.command()
-@click.option('--pcap_path', prompt='Enter the path to search for PCAP files', type=click.Path(exists=True))
-@click.option('--display_filter', prompt='Enter BPF display filter (press Enter for no filter)', default="")
+@click.option('--pcap_path', prompt='Enter the path to search for PCAP files',help='Enter the path to search for PCAP files', type=click.Path(exists=True))
+@click.option('--display_filter', prompt='Enter BPF display filter (press Enter for no filter)',help='Enter BPF display filter', default="")
 def analyze_pcap_interactive(pcap_path, display_filter):
     """
     Click command to interactively analyze a PCAP file with filter options.
