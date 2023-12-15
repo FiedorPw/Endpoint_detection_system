@@ -53,3 +53,36 @@ def example_rule(**kwargs):
         action_alert = None
         description = None
     return action_alert, description
+
+def example_remote_rule(**kwargs):
+    condition = False
+    # Function body - rule operating on data from kwargs
+    # Process pcap
+    #for pcap in kwargs.get('pcap', []):
+        # Processing logic for pcap files
+
+    # Process evtx
+    for evtx in kwargs.get('evtx', []):
+        condition = True
+        # Processing logic for evtx files
+
+    # Process xml
+    #for xml in kwargs.get('xml', []):
+        # Processing logic for xml files
+
+    # Process json
+    #for json_file in kwargs.get('json', []):
+        # Processing logic for json files
+
+    # Process txt
+    #for txt in kwargs.get('txt', []):
+        # Processing logic for txt files
+
+    # Final rule - what needs to be executed
+    if condition:
+        action_alert = "remote"  # action: "local", "remote"
+        description = "Alert evts file found"
+    else:
+        action_alert = None
+        description = None
+    return action_alert, description

@@ -15,7 +15,6 @@ OFF.PCAP.2 Analizator Cyberzagrożeń ma możliwość przekazania filtru zgodneg
 (wykorzystywanego przez libpcap / tshark / pyshark / Wireshark / Scapy ) do funkcji otwierającej i
 wczytującej plik PCAP.
 '''
-
 import Evtx
 import pyshark
 import xml.etree.ElementTree as ET
@@ -52,6 +51,7 @@ def read_txt_file(filename):
         return None
 
 def read_evtx_file(filename):
+    output_filename = 'OldTestData/output.xml'
     evtx_content = ""
     try:
         with Evtx(filename) as evtx:
@@ -59,6 +59,10 @@ def read_evtx_file(filename):
                 xml_str = evtx_record_xml_view(record)
                 evtx_content += f'{xml_str}\n'
             log_to_file("read_evtx_file read file in xml")
+
+            with open(output_filename, 'w', encoding='utf-8') as output_file:
+                output_file.write(evtx_content)
+
     except Exception as e:
         print(f"Error reading the EVTX file: {e}")
     return evtx_content
@@ -79,18 +83,18 @@ def analyze_pcap_packets(capture):
     for packet in capture:
         print(packet)
 
-read_json = read_json_file('OldTestData/test.json')#json_read_test.log
-print("test jsona:",read_json, "\n")
+if __name__ == "__main__":
+    read_json = read_json_file('OldTestData/test.json')#json_read_test.log
+    print("test jsona:",read_json, "\n")
 
+    read_xml = read_xml_file('OldTestData/test.xml')#xml_read_test.logtest.xml
+    print("test xmla:\n",read_xml, "\n")
 
-read_xml = read_xml_file('OldTestData/test.xml')#xml_read_test.logtest.xml
-print("test xmla:\n",read_xml, "\n")
+    read_txt = read_txt_file('OldTestData/text_read_test.log')
+    print("test txt:", read_txt, "\n")
 
-read_txt = read_txt_file('OldTestData/text_read_test.log')
-print("test txt:", read_txt, "\n")
-
-read_evtx = read_evtx_file('OldTestData/LM_sysmon_remote_task_src_powershell.evtx')
-print("test evtxa:\n", read_evtx)
+    read_evtx = read_evtx_file('OldTestData/LM_sysmon_remote_task_src_powershell.evtx')
+    print("test evtxa:\n", read_evtx)
 
 #capture = import_pcap('Network.pcap')
 
