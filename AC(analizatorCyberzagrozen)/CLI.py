@@ -59,7 +59,7 @@ def use_python_rule(path,load_rules,rule_name):
 #----Scenariusz2----
 @my_app.command()
 @click.option('--pattern')
-@click.option('--file_paths', nargs=-1, type=click.Path(exists=True))
+@click.option('--file_paths', nargs=1, type=click.Path(exists=True))
 def grep_command(pattern, file_paths):
     """Search for PATTERN in each FILE_PATH using grep."""
     results = TLA.grep_in_files(pattern, file_paths)
@@ -67,7 +67,7 @@ def grep_command(pattern, file_paths):
 
 @my_app.command()
 @click.option('--pattern')
-@click.option('--file_paths', nargs=-1, type=click.Path(exists=True))
+@click.option('--file_paths', nargs=1, type=click.Path(exists=True))
 def regex_command(pattern, file_paths):
     """Search for PATTERN in each FILE_PATH using Python regular expressions."""
     results = TLA.re_search_in_files(pattern, file_paths)
@@ -90,7 +90,7 @@ def sigmaEvt(json_log_path, sigma_rules_path):
     SIGMA.display_event_data("detected_events.json")
 
 @my_app.command()
-@click.option('events', type=click.Path(exists=True))
+@click.option('--events', type=click.Path(exists=True))
 def display_events_command(events):
     """Display event data from a JSON file."""
     if events is not None:
