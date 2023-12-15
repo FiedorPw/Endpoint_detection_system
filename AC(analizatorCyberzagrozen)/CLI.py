@@ -17,7 +17,7 @@ def my_app():
     pass
 
 @my_app.command()
-@click.option('--path','-p', help='Path to rules',show_default=True,type=click.Path(exists=True),nargs=1,default='offline_analyzer/detection-rules.py',required=False)
+@click.option('--path','-p', help='Path to rules',show_default=True,type=click.Path(exists=True),nargs=1,default='detection-rules.py',required=False)
 def load_python_rules(path):
     """Load python rules"""
     global python_rules

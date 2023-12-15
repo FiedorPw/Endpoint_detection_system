@@ -21,7 +21,7 @@ action_alert = None
 description = None
 return action_alert, description
 '''
-def example_rule(**kwargs):
+def example_local_rule(**kwargs):
     condition = False
     # Function body - rule operating on data from kwargs
     # Process pcap

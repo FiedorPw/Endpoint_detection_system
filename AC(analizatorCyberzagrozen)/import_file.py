@@ -36,7 +36,7 @@ def read_xml_file(filename):
     try:
         tree = ET.parse(filename)
         log_to_file("read_xml_file read file")
-        return ET.tostring(tree.getroot(), encoding='utf-8').decode('utf-8') #tree.getroot()
+        return ET.tostring(tree.getroot(), encoding='utf-8').decode('utf-8') 
     except ET.ParseError as e:
         print(f"Error parsing the XML file: {e}")
         return None
