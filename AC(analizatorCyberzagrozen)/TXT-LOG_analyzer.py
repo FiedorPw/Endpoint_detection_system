@@ -1,7 +1,6 @@
 import subprocess
 import shlex
 import re
-from import_file import log_to_file, read_evtx_file
 
 
 def grep_in_files(pattern, file_paths):

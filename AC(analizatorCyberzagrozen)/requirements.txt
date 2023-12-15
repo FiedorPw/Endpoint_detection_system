@@ -5,3 +5,4 @@ click-shell
 idna
 requests
 urllib3
+pyshark

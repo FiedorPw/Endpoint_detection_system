@@ -15,7 +15,6 @@ OFF.PCAP.2 Analizator Cyberzagrożeń ma możliwość przekazania filtru zgodneg
 (wykorzystywanego przez libpcap / tshark / pyshark / Wireshark / Scapy ) do funkcji otwierającej i
 wczytującej plik PCAP.
 '''
-
 import Evtx
 import pyshark
 import xml.etree.ElementTree as ET

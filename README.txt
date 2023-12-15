@@ -7,10 +7,10 @@ TO DO
     c.json✅
     d.xml✅
 2.detekcja i analiza plików:
-    a.PCAP offline -> filtrowanie✅ (scen1)✅
-    b.txt/logi offline - grep✅ + moduł py re (scen2) -> obsługa xmla(evtx)
+    a.PCAP offline -> filtrowanie✅ (scen1)✅ -> dodanie co CLI
+    b.txt/logi offline - grep✅ + moduł py re (scen2)✅ -> dodanie do CLI
     c.Reguły jako funkcje języka Python lokalne (scen3)✅ + przesyanie REST API
-    d.Wykorzystanie uniwersalnego formatu reguł - SIGMA
+    d.Wykorzystanie uniwersalnego formatu reguł - SIGMA (scen4)✅ + wyświetlanie i przesyłanie REST API
 
 3.logowanie
 4.styk REST

@@ -158,3 +158,9 @@ info: Analyzing PCAP file: Network.pcap
 info: import_pcap read file with display filter: {display_filter}
 info: Analyzing PCAP file: Network.pcap
 info: import_pcap read file with display filter: {display_filter}
+info: Analyzing PCAP file: Network.pcap
+info: import_pcap read file with display filter: {display_filter}
+info: read_json_file read file
+info: read_xml_file read file
+info: read_txt_file read file
+info: read_evtx_file read file in xml
