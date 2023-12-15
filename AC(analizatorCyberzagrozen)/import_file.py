@@ -16,9 +16,12 @@ OFF.PCAP.2 Analizator Cyberzagrożeń ma możliwość przekazania filtru zgodneg
 wczytującej plik PCAP.
 '''
 
+import Evtx
 import pyshark
 import xml.etree.ElementTree as ET
 import json
+from Evtx.Evtx import Evtx
+from Evtx.Views import evtx_record_xml_view
 
 def read_json_file(filename):
     try:
@@ -34,7 +37,7 @@ def read_xml_file(filename):
     try:
         tree = ET.parse(filename)
         log_to_file("read_xml_file read file")
-        return tree.getroot()
+        return ET.tostring(tree.getroot(), encoding='utf-8').decode('utf-8') #tree.getroot()
     except ET.ParseError as e:
         print(f"Error parsing the XML file: {e}")
         return None
@@ -48,6 +51,17 @@ def read_txt_file(filename):
         print(f"Error reading the TXT file: {e}")
         return None
 
+def read_evtx_file(filename):
+    evtx_content = ""
+    try:
+        with Evtx(filename) as evtx:
+            for record in evtx.records():
+                xml_str = evtx_record_xml_view(record)
+                evtx_content += f'{xml_str}\n'
+            log_to_file("read_evtx_file read file in xml")
+    except Exception as e:
+        print(f"Error reading the EVTX file: {e}")
+    return evtx_content
 
 def log_to_file(message):
     with open('OldTestData/ourLog.log', 'a') as file:
@@ -66,14 +80,17 @@ def analyze_pcap_packets(capture):
         print(packet)
 
 read_json = read_json_file('OldTestData/test.json')#json_read_test.log
-print("test jsona",read_json)
+print("test jsona:",read_json, "\n")
 
 
 read_xml = read_xml_file('OldTestData/test.xml')#xml_read_test.logtest.xml
-print("test xmla",read_xml)
+print("test xmla:\n",read_xml, "\n")
 
 read_txt = read_txt_file('OldTestData/text_read_test.log')
-print("test txt", read_txt)
+print("test txt:", read_txt, "\n")
+
+read_evtx = read_evtx_file('OldTestData/LM_sysmon_remote_task_src_powershell.evtx')
+print("test evtxa:\n", read_evtx)
 
 #capture = import_pcap('Network.pcap')
 
