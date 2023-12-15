@@ -14,4 +14,5 @@ def main(pcap_file, display_filter):
     analyze_pcap_packets(capture)
 
 if __name__ == '__main__':
+    print("Test filtrowania pliku PCAP:\n")
     main()
