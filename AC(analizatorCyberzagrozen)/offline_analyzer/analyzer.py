@@ -18,7 +18,7 @@ def load_rules(file_path):
     spec.loader.exec_module(detection_rules)
     return detection_rules
 
-def process_files_with_rules(rules_module, folder_path):
+def process_files_with_rules(rules_module, folder_path,rule_name_to_use=None):
     files = {}
     for root, _, filenames in os.walk(folder_path):
         for filename in filenames:
@@ -27,19 +27,20 @@ def process_files_with_rules(rules_module, folder_path):
 
     # Execute rules on the collected files
     for rule_name in dir(rules_module):
-        rule_function = getattr(rules_module, rule_name)
-        if callable(rule_function):
-            action_alert, description = rule_function(**files)
-            # Perform actions based on the rule output
-            if action_alert:
-                if action_alert == "local":
-                    print(f"Action: {action_alert}, Description: {description}")
-                    # Log information locally
-                elif action_alert == "remote":
-                    print(f"Action: {action_alert}, Description: {description}")
-                    # Log information locally and send information via REST API
-            else:
-                print("No action needed for this rule.")
+        if rule_name_to_use is None or rule_name_to_use == rule_name:
+            rule_function = getattr(rules_module, rule_name)
+            if callable(rule_function):
+                action_alert, description = rule_function(**files)
+                # Perform actions based on the rule output
+                if action_alert:
+                    if action_alert == "local":
+                        print(f"Action: {action_alert}, Description: {description}")
+                        # Log information locally
+                    elif action_alert == "remote":
+                        print(f"Action: {action_alert}, Description: {description}")
+                        # Log information locally and send information via REST API
+                else:
+                    print("No action needed for this rule.")
 
 def scan_with_python(folder_to_analyze):
     rules_file_path = "detection-rules.py"  # Replace with the correct path
