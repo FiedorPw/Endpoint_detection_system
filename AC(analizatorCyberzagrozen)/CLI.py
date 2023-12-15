@@ -8,7 +8,9 @@ import Sigma_analyzer as SIGMA
 import txt_log_analyzer as TLA
 from click_shell import shell
 from PCAP_analyzer import Pcap_analyzer, get_available_pcap_files
+from logger import Logger
 
+Logger("krycy-tool.log")
 # @click.group()  # no longer
 @shell(prompt='my-app > ', intro='Starting my app...')
 def my_app():

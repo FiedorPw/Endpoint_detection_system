@@ -20,6 +20,7 @@ import xml.etree.ElementTree as ET
 import json
 from Evtx.Evtx import Evtx
 from Evtx.Views import evtx_record_xml_view
+from logger import Logger
 
 def read_json_file(filename):
     try:
@@ -67,8 +68,7 @@ def read_evtx_file(filename):
     return evtx_content
 
 def log_to_file(message):
-    with open('OldTestData/ourLog.log', 'a') as file:
-        file.write(f'info: {message}\n')
+    Logger.output(message)
 
 def import_pcap(filename, display_filter=None):
     if display_filter:
