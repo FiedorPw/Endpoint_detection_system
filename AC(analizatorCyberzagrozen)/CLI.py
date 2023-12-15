@@ -11,7 +11,7 @@ from PCAP_analyzer import Pcap_analyzer, get_available_pcap_files
 from logger import Logger
 
 Logger("krycy-tool.log")
-# @click.group()  # no longer
+
 @shell(prompt='my-app > ', intro='Starting my app...')
 def my_app():
     pass
@@ -59,14 +59,6 @@ def use_python_rule(path,load_rules,rule_name):
         AN.process_files_with_rules(python_rules,path,rule_name)
 
 #----Scenariusz2----
-#@my_app.command()
-#@click.option('--pattern')
-#@click.option('--file_paths', nargs=1, type=click.Path(exists=True))
-#def grep_command(pattern, file_paths):
-#    """Search for PATTERN in each FILE_PATH using grep."""
-#    results = TLA.grep_in_files(pattern, file_paths)
-#    print(results)
-
 @my_app.command()
 @click.option('--pattern',prompt='Pattern to search',help='Pattern to search')
 @click.option('--file_paths',prompt='Path to file',help='Path to file', nargs=1, type=click.Path(exists=True))
@@ -75,14 +67,6 @@ def grep_command(pattern, file_paths):
     """Search for PATTERN in each FILE_PATH using grep."""
     results = TLA.grep_in_files(pattern, file_path)
     print(results)
-
-#@my_app.command()
-#@click.option('--pattern')
-#@click.option('--file_paths', nargs=1, type=click.Path(exists=True))
-#def regex_command(pattern, file_paths):
-#    """Search for PATTERN in each FILE_PATH using Python regular expressions."""
-#    results = TLA.re_search_in_files(pattern, file_paths)
-#    print(results)
 
 @my_app.command()
 @click.option('--pattern',prompt='Pattern to search',help='Pattern to search')
