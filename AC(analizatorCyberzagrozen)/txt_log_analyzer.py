@@ -1,40 +1,71 @@
 import subprocess
 import shlex
 import re
+import os
 
-
-def grep_in_files(pattern, file_paths):
-
+def grep_in_files(pattern, paths):
     results = {}
-    for file_path in file_paths:
-        try:
-            # Constructing the grep command
-            command = f"grep -n {shlex.quote(pattern)} {shlex.quote(file_path)}"
-            # Executing the command
-            result = subprocess.run(command, shell=True, text=True, capture_output=True)
-            # Parsing the output
-            matches = result.stdout.split('\n') if result.stdout else []
-            results[file_path] = matches
-        except Exception as e:
-            results[file_path] = [f"Error: {str(e)}"]
+
+    for path in paths:
+        if os.path.isfile(path):  # Check if it's a file
+            try:
+                # Constructing the grep command
+                command = f"grep -n {shlex.quote(pattern)} {shlex.quote(path)}"
+                # Executing the command
+                result = subprocess.run(command, shell=True, text=True, capture_output=True)
+                # Parsing the output
+                matches = result.stdout.split('\n') if result.stdout else []
+                results[path] = matches
+            except Exception as e:
+                results[path] = [f"Error: {str(e)}"]
+        elif os.path.isdir(path):  # Check if it's a directory
+            for root, _, files in os.walk(path):
+                for file in files:
+                    file_path = os.path.join(root, file)
+                    try:
+                        # Constructing the grep command
+                        command = f"grep -n {shlex.quote(pattern)} {shlex.quote(file_path)}"
+                        # Executing the command
+                        result = subprocess.run(command, shell=True, text=True, capture_output=True)
+                        # Parsing the output
+                        matches = result.stdout.split('\n') if result.stdout else []
+                        results[file_path] = matches
+                    except Exception as e:
+                        results[file_path] = [f"Error: {str(e)}"]
+        else:
+            results[path] = "Error: Path is neither a file nor a directory."
 
     return results
 
-def re_search_in_files(pattern, file_paths):
+def re_search_in_files(pattern, paths):
     results = {}
     compiled_pattern = re.compile(pattern)
 
-    for file_path in file_paths:
-        try:
-            with open(file_path, 'r') as file:
-                file_content = file.read()
-                # Finding all matches
-                matches = compiled_pattern.findall(file_content)
-                results[file_path] = matches
-        except Exception as e:
-            results[file_path] = f"Error: {str(e)}"
+    for path in paths:
+        if os.path.isfile(path):  # Check if it's a file
+            try:
+                with open(path, 'r') as file:
+                    file_content = file.read()
+                    matches = compiled_pattern.findall(file_content)
+                    results[path] = matches
+            except Exception as e:
+                results[path] = f"Error: {str(e)}"
+        elif os.path.isdir(path):  # Check if it's a directory
+            for root, _, files in os.walk(path):
+                for file in files:
+                    file_path = os.path.join(root, file)
+                    try:
+                        with open(file_path, 'r') as file:
+                            file_content = file.read()
+                            matches = compiled_pattern.findall(file_content)
+                            results[file_path] = matches
+                    except Exception as e:
+                        results[file_path] = f"Error: {str(e)}"
+        else:
+            results[path] = "Error: Path is neither a file nor a directory."
 
     return results
+
 
 def main():
     pattern = "plik"
