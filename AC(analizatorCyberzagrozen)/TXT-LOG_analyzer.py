@@ -1,6 +1,7 @@
 import subprocess
 import shlex
 import re
+from import_file import log_to_file, read_evtx_file
 
 
 def grep_in_files(pattern, file_paths):
@@ -38,7 +39,7 @@ def re_search_in_files(pattern, file_paths):
 
 def main():
     pattern = "plik"
-    file_paths = {"OldTestData/text_read_test.log","OldTestData/ourLog.log"}
+    file_paths = {"OldTestData/text_read_test.log","OldTestData/ourLog.log","OldTestData/output.xml"}
     print(grep_in_files(pattern, file_paths))
     # Wyrażenie regularne do wyszukiwania adresów email
     email_pattern = r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+"
