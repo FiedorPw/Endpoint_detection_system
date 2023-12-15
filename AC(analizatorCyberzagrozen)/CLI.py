@@ -2,7 +2,7 @@
 która pozwoli na realizację
  wskazanych wymagań. Moduł do tworzenia aplikacji CLI - Click'''
 import click
-import offline_analyzer.analyzer as AN
+import pythonAnalyzer as AN
 from click_shell import shell
 
 # @click.group()  # no longer
@@ -26,7 +26,8 @@ def show_python_rules(load_rules):
         print("Loading rules")
         global python_rules
         python_rules=AN.load_rules(load_rules)
-        print("Rules loaded")
+        count_rules=AN.count_rules(python_rules)
+    print(count_rules,"Rules loaded")
     try: python_rules
     except NameError:
         print("Load rules first")
@@ -43,7 +44,8 @@ def use_python_rule(path,load_rules,rule_name):
         print("Loading rules")
         global python_rules
         python_rules=AN.load_rules(load_rules)
-        print(count_rules," Rules loaded")
+        count_rules=AN.count_rules(python_rules)
+        print(count_rules,"Rules loaded")
     try: python_rules
     except NameError:
         print("Load rules first")
