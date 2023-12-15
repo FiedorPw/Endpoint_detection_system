@@ -12,6 +12,8 @@ syslog.
 import importlib.util
 import os
 import networkClient as nc
+from logger import Logger
+lg = Logger()
 
 def show_rules(rules_module):
     for rule_name in dir(rules_module):
@@ -44,12 +46,9 @@ def process_files_with_rules(rules_module, folder_path,rule_name_to_use=None):
                 action_alert, description = rule_function(**files)
                 # Perform actions based on the rule output
                 if action_alert:
-                    if action_alert == "local":
-                        print(f"Rule: {rule_name}, Action: {action_alert}, Description: {description}")
-                        # Log information locally
-                    elif action_alert == "remote":
-                        print(f"Rule: {rule_name}, Action: {action_alert}, Description: {description}")
+                    lg.output(f"Rule: {rule_name}, Action: {action_alert}, Description: {description}")
+                    if action_alert == "remote":
                         nc.sendRuleDetection(rule_name=rule_name,description=description)
                         # Log information locally and send information via REST API
-                else:
-                    print("No action needed for this rule.")
+                    else:
+                        print("No action needed for this rule.")
