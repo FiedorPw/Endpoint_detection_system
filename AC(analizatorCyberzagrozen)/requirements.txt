@@ -6,8 +6,6 @@ idna
 requests
 urllib3
 pyshark
-aiohttp
-Evtx
 jinja2>=2.11.3
 colorama>=0.4.4
 tqdm>=4.58.0
