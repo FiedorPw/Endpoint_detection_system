@@ -50,5 +50,5 @@ def process_files_with_rules(rules_module, folder_path,rule_name_to_use=None):
                     if action_alert == "remote":
                         nc.sendRuleDetection(rule_name=rule_name,description=description)
                         # Log information locally and send information via REST API
-                    else:
-                        print("No action needed for this rule.")
+                else:
+                    print("No action needed for this rule.")

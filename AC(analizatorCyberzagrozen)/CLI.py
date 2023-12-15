@@ -31,7 +31,7 @@ def show_python_rules(load_rules):
         global python_rules
         python_rules=AN.load_rules(load_rules)
         count_rules=AN.count_rules(python_rules)
-    print(count_rules,"Rules loaded")
+        print(count_rules,"Rules loaded")
     try: python_rules
     except NameError:
         print("Load rules first")
