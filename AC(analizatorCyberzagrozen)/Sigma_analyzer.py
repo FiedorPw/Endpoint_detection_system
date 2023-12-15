@@ -33,11 +33,12 @@ def run_zircolite_evtx(evt_log_path, sigma_rules_path):
     
 def display_event_data(events):
     json_data = load_json_data(events)
-    for event in json_data:
+    for event in json_data[:-1]:
+        rule_level = event.get("rule_level", "No title")
         title = event.get("title", "No title")
         description = event.get("description", "No description")
         count = event.get("count", 0)
-        print(f"Title: {title}\nDescription: {description}\nCount: {count}\n")
+        print(f"Level: {rule_level}\nTitle: {title}\nDescription: {description}\nCount: {count}\n")
 
 
 

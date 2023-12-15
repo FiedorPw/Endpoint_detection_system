@@ -657,3 +657,367 @@ Finished in 0 seconds
 2023-12-15 12:47:45 INFO     [+] Cleaning
 2023-12-15 12:47:45 INFO     
 Finished in 0 seconds
+2023-12-15 12:57:23 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 12:57:23 INFO     [+] Checking prerequisites
+2023-12-15 12:57:23 INFO     [+] Extracting events Using 'tmp-E1KDSZFA' directory 
+2023-12-15 12:57:23 INFO     [+] Processing events
+2023-12-15 12:57:23 INFO     [+] Creating model
+2023-12-15 12:57:23 INFO     [+] Inserting data
+2023-12-15 12:57:23 INFO     [+] Cleaning unused objects
+2023-12-15 12:57:23 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 12:57:23 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 12:57:23 DEBUG        - Security Event Log Cleared [medium] : 1 events
+2023-12-15 12:57:23 DEBUG        - Security Eventlog Cleared [high] : 1 events
+2023-12-15 12:57:24 INFO     [+] Results written in : detected_events.json
+2023-12-15 12:57:24 INFO     [+] Cleaning
+2023-12-15 12:57:24 INFO     
+Finished in 0 seconds
+2023-12-15 12:57:55 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 12:57:55 INFO     [+] Checking prerequisites
+2023-12-15 12:57:55 INFO     [+] Extracting events Using 'tmp-U5O6GVSF' directory 
+2023-12-15 12:57:55 INFO     [+] Processing events
+2023-12-15 12:57:55 INFO     [+] Creating model
+2023-12-15 12:57:55 INFO     [+] Inserting data
+2023-12-15 12:57:55 INFO     [+] Cleaning unused objects
+2023-12-15 12:57:55 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 12:57:55 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 12:57:55 DEBUG        - Security Event Log Cleared [medium] : 1 events
+2023-12-15 12:57:55 DEBUG        - Security Eventlog Cleared [high] : 1 events
+2023-12-15 12:57:55 INFO     [+] Results written in : detected_events.json
+2023-12-15 12:57:55 INFO     [+] Cleaning
+2023-12-15 12:57:55 INFO     
+Finished in 0 seconds
+2023-12-15 12:58:07 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 12:58:07 INFO     [+] Checking prerequisites
+2023-12-15 12:58:07 INFO     [+] Extracting events Using 'tmp-9FF4BL2A' directory 
+2023-12-15 12:58:07 INFO     [+] Processing events
+2023-12-15 12:58:07 INFO     [+] Creating model
+2023-12-15 12:58:07 INFO     [+] Inserting data
+2023-12-15 12:58:07 INFO     [+] Cleaning unused objects
+2023-12-15 12:58:07 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 12:58:07 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 12:58:07 DEBUG        - Security Event Log Cleared [medium] : 1 events
+2023-12-15 12:58:07 DEBUG        - Security Eventlog Cleared [high] : 1 events
+2023-12-15 12:58:07 INFO     [+] Results written in : detected_events.json
+2023-12-15 12:58:07 INFO     [+] Cleaning
+2023-12-15 12:58:07 INFO     
+Finished in 0 seconds
+2023-12-15 13:01:20 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 13:01:20 INFO     [+] Checking prerequisites
+2023-12-15 13:01:20 INFO     [+] Extracting events Using 'tmp-XKKF1EQ0' directory 
+2023-12-15 13:01:20 INFO     [+] Processing events
+2023-12-15 13:01:20 INFO     [+] Creating model
+2023-12-15 13:01:20 INFO     [+] Inserting data
+2023-12-15 13:01:20 INFO     [+] Cleaning unused objects
+2023-12-15 13:01:20 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 13:01:20 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 13:01:20 DEBUG        - Security Event Log Cleared [medium] : 1 events
+2023-12-15 13:01:20 DEBUG        - Security Eventlog Cleared [high] : 1 events
+2023-12-15 13:01:20 INFO     [+] Results written in : detected_events.json
+2023-12-15 13:01:20 INFO     [+] Cleaning
+2023-12-15 13:01:20 INFO     
+Finished in 0 seconds
+2023-12-15 13:01:26 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 13:01:26 INFO     [+] Checking prerequisites
+2023-12-15 13:01:26 INFO     [+] Extracting events Using 'tmp-YHFK3H7Q' directory 
+2023-12-15 13:01:26 INFO     [+] Processing events
+2023-12-15 13:01:26 INFO     [+] Creating model
+2023-12-15 13:01:26 INFO     [+] Inserting data
+2023-12-15 13:01:26 INFO     [+] Cleaning unused objects
+2023-12-15 13:01:26 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 13:01:26 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 13:01:26 DEBUG        - Security Event Log Cleared [medium] : 1 events
+2023-12-15 13:01:26 DEBUG        - Security Eventlog Cleared [high] : 1 events
+2023-12-15 13:01:26 INFO     [+] Results written in : detected_events.json
+2023-12-15 13:01:26 INFO     [+] Cleaning
+2023-12-15 13:01:26 INFO     
+Finished in 0 seconds
+2023-12-15 13:02:28 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 13:02:28 INFO     [+] Checking prerequisites
+2023-12-15 13:02:28 INFO     [+] Extracting events Using 'tmp-NH67U6H3' directory 
+2023-12-15 13:02:28 INFO     [+] Processing events
+2023-12-15 13:02:28 INFO     [+] Creating model
+2023-12-15 13:02:28 INFO     [+] Inserting data
+2023-12-15 13:02:28 INFO     [+] Cleaning unused objects
+2023-12-15 13:02:28 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 13:02:28 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 13:02:28 DEBUG        - Security Event Log Cleared [medium] : 1 events
+2023-12-15 13:02:28 DEBUG        - Security Eventlog Cleared [high] : 1 events
+2023-12-15 13:02:28 INFO     [+] Results written in : detected_events.json
+2023-12-15 13:02:28 INFO     [+] Cleaning
+2023-12-15 13:02:28 INFO     
+Finished in 0 seconds
+2023-12-15 13:02:55 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 13:02:55 INFO     [+] Checking prerequisites
+2023-12-15 13:02:55 INFO     [+] Extracting events Using 'tmp-QYHIFFQ8' directory 
+2023-12-15 13:02:55 INFO     [+] Processing events
+2023-12-15 13:02:55 INFO     [+] Creating model
+2023-12-15 13:02:55 INFO     [+] Inserting data
+2023-12-15 13:02:55 INFO     [+] Cleaning unused objects
+2023-12-15 13:02:55 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 13:02:55 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 13:02:55 DEBUG        - Security Event Log Cleared [medium] : 1 events
+2023-12-15 13:02:55 DEBUG        - Security Eventlog Cleared [high] : 1 events
+2023-12-15 13:02:55 INFO     [+] Results written in : detected_events.json
+2023-12-15 13:02:55 INFO     [+] Cleaning
+2023-12-15 13:02:55 INFO     
+Finished in 0 seconds
+2023-12-15 13:03:43 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 13:03:43 INFO     [+] Checking prerequisites
+2023-12-15 13:03:43 INFO     [+] Extracting events Using 'tmp-RAUW3X1P' directory 
+2023-12-15 13:03:43 INFO     [+] Processing events
+2023-12-15 13:03:43 INFO     [+] Creating model
+2023-12-15 13:03:43 INFO     [+] Inserting data
+2023-12-15 13:03:43 INFO     [+] Cleaning unused objects
+2023-12-15 13:03:43 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 13:03:43 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 13:03:43 DEBUG        - Security Event Log Cleared [medium] : 1 events
+2023-12-15 13:03:43 DEBUG        - Security Eventlog Cleared [high] : 1 events
+2023-12-15 13:03:43 INFO     [+] Results written in : detected_events.json
+2023-12-15 13:03:43 INFO     [+] Cleaning
+2023-12-15 13:03:43 INFO     
+Finished in 0 seconds
+2023-12-15 13:05:31 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 13:05:31 INFO     [+] Checking prerequisites
+2023-12-15 13:05:31 INFO     [+] Extracting events Using 'tmp-0H9AYC5H' directory 
+2023-12-15 13:05:31 INFO     [+] Processing events
+2023-12-15 13:05:31 INFO     [+] Creating model
+2023-12-15 13:05:31 INFO     [+] Inserting data
+2023-12-15 13:05:31 INFO     [+] Cleaning unused objects
+2023-12-15 13:05:31 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 13:05:31 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 13:05:31 DEBUG        - Security Event Log Cleared [medium] : 1 events
+2023-12-15 13:05:31 DEBUG        - Security Eventlog Cleared [high] : 1 events
+2023-12-15 13:05:31 INFO     [+] Results written in : detected_events.json
+2023-12-15 13:05:31 INFO     [+] Cleaning
+2023-12-15 13:05:31 INFO     
+Finished in 0 seconds
+2023-12-15 13:06:10 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 13:06:10 INFO     [+] Checking prerequisites
+2023-12-15 13:06:10 INFO     [+] Extracting events Using 'tmp-5Y9GS9AV' directory 
+2023-12-15 13:06:10 INFO     [+] Processing events
+2023-12-15 13:06:10 INFO     [+] Creating model
+2023-12-15 13:06:10 INFO     [+] Inserting data
+2023-12-15 13:06:10 INFO     [+] Cleaning unused objects
+2023-12-15 13:06:10 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 13:06:10 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 13:06:10 DEBUG        - Security Event Log Cleared [medium] : 1 events
+2023-12-15 13:06:10 DEBUG        - Security Eventlog Cleared [high] : 1 events
+2023-12-15 13:06:10 INFO     [+] Results written in : detected_events.json
+2023-12-15 13:06:10 INFO     [+] Cleaning
+2023-12-15 13:06:10 INFO     
+Finished in 0 seconds
+2023-12-15 13:06:22 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 13:06:22 INFO     [+] Checking prerequisites
+2023-12-15 13:06:22 INFO     [+] Extracting events Using 'tmp-8RYF5R8M' directory 
+2023-12-15 13:06:22 INFO     [+] Processing events
+2023-12-15 13:06:22 INFO     [+] Creating model
+2023-12-15 13:06:22 INFO     [+] Inserting data
+2023-12-15 13:06:22 INFO     [+] Cleaning unused objects
+2023-12-15 13:06:22 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 13:06:22 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 13:06:22 DEBUG        - Security Event Log Cleared [medium] : 1 events
+2023-12-15 13:06:22 DEBUG        - Security Eventlog Cleared [high] : 1 events
+2023-12-15 13:06:22 INFO     [+] Results written in : detected_events.json
+2023-12-15 13:06:22 INFO     [+] Cleaning
+2023-12-15 13:06:22 INFO     
+Finished in 0 seconds
+2023-12-15 13:07:39 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 13:07:39 INFO     [+] Checking prerequisites
+2023-12-15 13:07:39 INFO     [+] Extracting events Using 'tmp-BYZ7TJQS' directory 
+2023-12-15 13:07:39 INFO     [+] Processing events
+2023-12-15 13:07:39 INFO     [+] Creating model
+2023-12-15 13:07:39 INFO     [+] Inserting data
+2023-12-15 13:07:39 INFO     [+] Cleaning unused objects
+2023-12-15 13:07:39 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 13:07:39 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 13:07:39 DEBUG        - Security Event Log Cleared [medium] : 1 events
+2023-12-15 13:07:39 DEBUG        - Security Eventlog Cleared [high] : 1 events
+2023-12-15 13:07:40 INFO     [+] Results written in : detected_events.json
+2023-12-15 13:07:40 INFO     [+] Cleaning
+2023-12-15 13:07:40 INFO     
+Finished in 0 seconds
+2023-12-15 13:09:58 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 13:09:58 INFO     [+] Checking prerequisites
+2023-12-15 13:09:58 INFO     [+] Extracting events Using 'tmp-U78VLIAD' directory 
+2023-12-15 13:09:58 INFO     [+] Processing events
+2023-12-15 13:09:58 INFO     [+] Creating model
+2023-12-15 13:09:58 INFO     [+] Inserting data
+2023-12-15 13:09:58 INFO     [+] Cleaning unused objects
+2023-12-15 13:09:58 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 13:09:58 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 13:09:58 DEBUG        - Security Event Log Cleared [medium] : 1 events
+2023-12-15 13:09:58 DEBUG        - Security Eventlog Cleared [high] : 1 events
+2023-12-15 13:09:58 INFO     [+] Results written in : detected_events.json
+2023-12-15 13:09:58 INFO     [+] Cleaning
+2023-12-15 13:09:58 INFO     
+Finished in 0 seconds
+2023-12-15 13:10:48 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 13:10:48 INFO     [+] Checking prerequisites
+2023-12-15 13:10:48 INFO     [+] Extracting events Using 'tmp-OSWD70II' directory 
+2023-12-15 13:10:48 INFO     [+] Processing events
+2023-12-15 13:10:48 INFO     [+] Creating model
+2023-12-15 13:10:48 INFO     [+] Inserting data
+2023-12-15 13:10:48 INFO     [+] Cleaning unused objects
+2023-12-15 13:10:48 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 13:10:48 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 13:10:48 DEBUG        - Vulnerable Driver Load By Name [low] : 1 events
+2023-12-15 13:10:48 INFO     [+] Results written in : detected_events.json
+2023-12-15 13:10:48 INFO     [+] Cleaning
+2023-12-15 13:10:48 INFO     
+Finished in 0 seconds
+2023-12-15 13:11:10 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 13:11:10 INFO     [+] Checking prerequisites
+2023-12-15 13:11:10 INFO     [+] Extracting events Using 'tmp-7M5GFLXO' directory 
+2023-12-15 13:11:10 INFO     [+] Processing events
+2023-12-15 13:11:10 INFO     [+] Creating model
+2023-12-15 13:11:10 INFO     [+] Inserting data
+2023-12-15 13:11:10 INFO     [+] Cleaning unused objects
+2023-12-15 13:11:10 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 13:11:10 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 13:11:10 INFO     [+] Results written in : detected_events.json
+2023-12-15 13:11:10 INFO     [+] Cleaning
+2023-12-15 13:11:10 INFO     
+Finished in 0 seconds
+2023-12-15 13:11:27 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 13:11:27 INFO     [+] Checking prerequisites
+2023-12-15 13:11:27 INFO     [+] Extracting events Using 'tmp-L1GE3BSG' directory 
+2023-12-15 13:11:27 INFO     [+] Processing events
+2023-12-15 13:11:27 INFO     [+] Creating model
+2023-12-15 13:11:27 INFO     [+] Inserting data
+2023-12-15 13:11:27 INFO     [+] Cleaning unused objects
+2023-12-15 13:11:27 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 13:11:27 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 13:11:27 DEBUG        - Windows Defender Threat Detected [high] : 11 events
+2023-12-15 13:11:27 INFO     [+] Results written in : detected_events.json
+2023-12-15 13:11:27 INFO     [+] Cleaning
+2023-12-15 13:11:27 INFO     
+Finished in 0 seconds
