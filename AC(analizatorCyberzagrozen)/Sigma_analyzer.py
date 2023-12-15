@@ -41,14 +41,15 @@ def display_event_data(events):
         print(f"Level: {rule_level}\nTitle: {title}\nDescription: {description}\nCount: {count}\n")
 
 
-
-# Ścieżki do plików
-evt_log_path = "OldTestData/WinDefender_Events_1117_1116_AtomicRedTeam.evtx"
-sigma_rules_path = "OldTestData/rules/rules_windows_generic_full.json"
-events="detected_events.json"
-
-# Uruchomienie Zircolite
-run_zircolite_evtx(evt_log_path, sigma_rules_path)
-display_event_data(events)
-
-# Przetworzenie wyników...
+if __name__ == '__main__':
+    # Ścieżki do plików
+    evt_log_path = "OldTestData/WinDefender_Events_1117_1116_AtomicRedTeam.evtx"
+    sigma_rules_path = "OldTestData/rules/rules_windows_generic_full.json"
+    events="detected_events.json"
+    
+    # Uruchomienie Zircolite
+    run_zircolite_evtx(evt_log_path, sigma_rules_path)
+    display_event_data(events)
+    
+    # Przetworzenie wyników...
+    
