@@ -22,6 +22,7 @@ description = None
 return action_alert, description
 '''
 def example_rule(**kwargs):
+    condition = False
     # Function body - rule operating on data from kwargs
     # Process pcap
     #for pcap in kwargs.get('pcap', []):
