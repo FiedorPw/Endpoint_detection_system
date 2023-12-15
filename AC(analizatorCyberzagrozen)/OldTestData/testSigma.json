@@ -1,0 +1,28 @@
+[
+    {
+        "EventID": 28,
+        "Channel": "Microsoft-Windows-Sysmon/Operational",
+        "Message": "FileBlockShredding event detected. Policy violation suspected.",
+        "AdditionalInfo": "Details about the file shredding attempt..."
+    },
+    {
+        "EventID": 4,
+        "Channel": "Microsoft-Windows-Sysmon/Operational",
+        "State": "Stopped",
+        "Message": "Sysmon configuration modified. State changed to Stopped.",
+        "AdditionalInfo": "Details about the configuration change..."
+    },
+    {
+        "EventID": 16,
+        "Channel": "Microsoft-Windows-Sysmon/Operational",
+        "State": "Stopped",
+        "Message": "Sysmon configuration modified. State changed to Stopped.",
+        "AdditionalInfo": "Details about the configuration change..."
+    },
+    {
+        "EventID": 27,
+        "Channel": "Microsoft-Windows-Sysmon/Operational",
+        "Message": "FileBlockExecutable event detected. Blocked execution of a file.",
+        "AdditionalInfo": "Details about the executable file..."
+    }
+]

@@ -42,15 +42,11 @@ def main():
     print(grep_in_files(pattern, file_paths))
     # Wyrażenie regularne do wyszukiwania adresów email
     email_pattern = r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+"
-
+    
+    file_paths = {"OldTestData/text_read_test.log","OldTestData/ourLog.log"}
     # Wywołanie funkcji re_search_in_files
-    matches = re_search_in_files(email_pattern, file_paths)
+    print(re_search_in_files(email_pattern, file_paths))
 
-    # Wyświetlanie wyników
-    for file_path, matching_lines in matches.items():
-        print(f"Wyniki dla {file_path}:")
-        for line in matching_lines:
-            print(line)
 
 if __name__ == '__main__':
     main()
