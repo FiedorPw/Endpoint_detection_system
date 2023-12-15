@@ -6,3 +6,4 @@ idna
 requests
 urllib3
 pyshark
+os
