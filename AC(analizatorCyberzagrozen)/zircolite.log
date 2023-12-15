@@ -415,3 +415,245 @@ Finished in 0 seconds
 2023-12-15 10:38:51 INFO     [+] Cleaning
 2023-12-15 10:38:51 INFO     
 Finished in 0 seconds
+2023-12-15 11:53:51 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 11:53:51 INFO     [+] Checking prerequisites
+2023-12-15 11:53:51 INFO     [+] Extracting events Using 'tmp-MI3K0JYK' directory 
+2023-12-15 11:53:51 INFO     [+] Processing events
+2023-12-15 11:53:51 INFO     [+] Creating model
+2023-12-15 11:53:51 INFO     [+] Inserting data
+2023-12-15 11:53:51 INFO     [+] Cleaning unused objects
+2023-12-15 11:53:51 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 11:53:51 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 11:53:51 DEBUG        - Windows Defender Threat Detected [high] : 11 events
+2023-12-15 11:53:51 INFO     [+] Results written in : detected_events.json
+2023-12-15 11:53:51 INFO     [+] Cleaning
+2023-12-15 11:53:51 INFO     
+Finished in 0 seconds
+2023-12-15 11:54:25 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 11:54:25 INFO     [+] Checking prerequisites
+2023-12-15 11:54:25 INFO     [+] Extracting events Using 'tmp-JNV3SZVW' directory 
+2023-12-15 11:54:25 INFO     [+] Processing events
+2023-12-15 11:54:25 INFO     [+] Creating model
+2023-12-15 11:54:25 INFO     [+] Inserting data
+2023-12-15 11:54:25 INFO     [+] Cleaning unused objects
+2023-12-15 11:54:25 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 11:54:25 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 11:54:25 DEBUG        - Windows Defender Threat Detected [high] : 11 events
+2023-12-15 11:54:25 INFO     [+] Results written in : detected_events.json
+2023-12-15 11:54:25 INFO     [+] Cleaning
+2023-12-15 11:54:25 INFO     
+Finished in 0 seconds
+2023-12-15 11:54:43 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 11:54:43 INFO     [+] Checking prerequisites
+2023-12-15 11:54:43 INFO     [+] Extracting events Using 'tmp-QRSWDK23' directory 
+2023-12-15 11:54:43 INFO     [+] Processing events
+2023-12-15 11:54:43 INFO     [+] Creating model
+2023-12-15 11:54:43 INFO     [+] Inserting data
+2023-12-15 11:54:43 INFO     [+] Cleaning unused objects
+2023-12-15 11:54:43 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 11:54:43 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 11:54:43 DEBUG        - Windows Defender Threat Detected [high] : 11 events
+2023-12-15 11:54:43 INFO     [+] Results written in : detected_events.json
+2023-12-15 11:54:43 INFO     [+] Cleaning
+2023-12-15 11:54:43 INFO     
+Finished in 0 seconds
+2023-12-15 11:55:43 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 11:55:43 INFO     [+] Checking prerequisites
+2023-12-15 11:55:43 INFO     [+] Extracting events Using 'tmp-L75XSNMS' directory 
+2023-12-15 11:55:43 INFO     [+] Processing events
+2023-12-15 11:55:43 INFO     [+] Creating model
+2023-12-15 11:55:43 INFO     [+] Inserting data
+2023-12-15 11:55:43 INFO     [+] Cleaning unused objects
+2023-12-15 11:55:43 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 11:55:43 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 11:55:43 DEBUG        - Windows Defender Threat Detected [high] : 11 events
+2023-12-15 11:55:43 INFO     [+] Results written in : detected_events.json
+2023-12-15 11:55:43 INFO     [+] Cleaning
+2023-12-15 11:55:43 INFO     
+Finished in 0 seconds
+2023-12-15 11:55:49 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 11:55:49 INFO     [+] Checking prerequisites
+2023-12-15 11:55:49 INFO     [+] Extracting events Using 'tmp-PTXVNOSX' directory 
+2023-12-15 11:55:49 INFO     [+] Processing events
+2023-12-15 11:55:49 INFO     [+] Creating model
+2023-12-15 11:55:49 INFO     [+] Inserting data
+2023-12-15 11:55:49 INFO     [+] Cleaning unused objects
+2023-12-15 11:55:49 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 11:55:49 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 11:55:49 DEBUG        - Windows Defender Threat Detected [high] : 11 events
+2023-12-15 11:55:49 INFO     [+] Results written in : detected_events.json
+2023-12-15 11:55:49 INFO     [+] Cleaning
+2023-12-15 11:55:49 INFO     
+Finished in 0 seconds
+2023-12-15 11:56:06 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 11:56:06 INFO     [+] Checking prerequisites
+2023-12-15 11:56:06 INFO     [+] Extracting events Using 'tmp-SZ8VH34V' directory 
+2023-12-15 11:56:06 INFO     [+] Processing events
+2023-12-15 11:56:06 INFO     [+] Creating model
+2023-12-15 11:56:06 INFO     [+] Inserting data
+2023-12-15 11:56:06 INFO     [+] Cleaning unused objects
+2023-12-15 11:56:06 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 11:56:06 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 11:56:06 DEBUG        - Windows Defender Threat Detected [high] : 11 events
+2023-12-15 11:56:06 INFO     [+] Results written in : detected_events.json
+2023-12-15 11:56:06 INFO     [+] Cleaning
+2023-12-15 11:56:06 INFO     
+Finished in 0 seconds
+2023-12-15 11:56:13 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 11:56:13 INFO     [+] Checking prerequisites
+2023-12-15 11:56:13 INFO     [+] Extracting events Using 'tmp-JSMPXX2F' directory 
+2023-12-15 11:56:13 INFO     [+] Processing events
+2023-12-15 11:56:13 INFO     [+] Creating model
+2023-12-15 11:56:13 INFO     [+] Inserting data
+2023-12-15 11:56:13 INFO     [+] Cleaning unused objects
+2023-12-15 11:56:13 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 11:56:13 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 11:56:13 DEBUG        - Windows Defender Threat Detected [high] : 11 events
+2023-12-15 11:56:13 INFO     [+] Results written in : detected_events.json
+2023-12-15 11:56:13 INFO     [+] Cleaning
+2023-12-15 11:56:13 INFO     
+Finished in 0 seconds
+2023-12-15 11:58:23 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 11:58:23 INFO     [+] Checking prerequisites
+2023-12-15 11:58:23 INFO     [+] Extracting events Using 'tmp-0TNM7QYU' directory 
+2023-12-15 11:58:23 INFO     [+] Processing events
+2023-12-15 11:58:23 INFO     [+] Creating model
+2023-12-15 11:58:23 INFO     [+] Inserting data
+2023-12-15 11:58:23 INFO     [+] Cleaning unused objects
+2023-12-15 11:58:23 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 11:58:23 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 11:58:23 DEBUG        - Windows Defender Threat Detected [high] : 11 events
+2023-12-15 11:58:23 INFO     [+] Results written in : detected_events.json
+2023-12-15 11:58:23 INFO     [+] Cleaning
+2023-12-15 11:58:23 INFO     
+Finished in 0 seconds
+2023-12-15 12:37:00 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 12:37:00 INFO     [+] Checking prerequisites
+2023-12-15 12:37:00 INFO     [+] Extracting events Using 'tmp-YO4NF99W' directory 
+2023-12-15 12:37:00 INFO     [+] Processing events
+2023-12-15 12:37:00 INFO     [+] Creating model
+2023-12-15 12:37:00 INFO     [+] Inserting data
+2023-12-15 12:37:00 INFO     [+] Cleaning unused objects
+2023-12-15 12:37:00 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 12:37:00 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 12:37:00 DEBUG        - Windows Defender Threat Detected [high] : 11 events
+2023-12-15 12:37:00 INFO     [+] Results written in : detected_events.json
+2023-12-15 12:37:00 INFO     [+] Cleaning
+2023-12-15 12:37:00 INFO     
+Finished in 0 seconds
+2023-12-15 12:43:42 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 12:43:42 INFO     [+] Checking prerequisites
+2023-12-15 12:43:42 INFO     [+] Extracting events Using 'tmp-XHPBI8J3' directory 
+2023-12-15 12:43:42 INFO     [+] Processing events
+2023-12-15 12:43:42 INFO     [+] Creating model
+2023-12-15 12:43:42 INFO     [+] Inserting data
+2023-12-15 12:43:42 INFO     [+] Cleaning unused objects
+2023-12-15 12:43:42 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 12:43:42 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 12:43:42 DEBUG        - Windows Defender Threat Detected [high] : 11 events
+2023-12-15 12:43:42 INFO     [+] Results written in : detected_events.json
+2023-12-15 12:43:42 INFO     [+] Cleaning
+2023-12-15 12:43:42 INFO     
+Finished in 0 seconds
+2023-12-15 12:47:45 INFO     
+    ███████╗██╗██████╗  ██████╗ ██████╗ ██╗     ██╗████████╗███████╗
+    ╚══███╔╝██║██╔══██╗██╔════╝██╔═══██╗██║     ██║╚══██╔══╝██╔════╝
+      ███╔╝ ██║██████╔╝██║     ██║   ██║██║     ██║   ██║   █████╗
+     ███╔╝  ██║██╔══██╗██║     ██║   ██║██║     ██║   ██║   ██╔══╝
+    ███████╗██║██║  ██║╚██████╗╚██████╔╝███████╗██║   ██║   ███████╗
+    ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
+   -= Standalone SIGMA Detection tool for EVTX/Auditd/Sysmon Linux =-
+    
+2023-12-15 12:47:45 INFO     [+] Checking prerequisites
+2023-12-15 12:47:45 INFO     [+] Extracting events Using 'tmp-J1HIO934' directory 
+2023-12-15 12:47:45 INFO     [+] Processing events
+2023-12-15 12:47:45 INFO     [+] Creating model
+2023-12-15 12:47:45 INFO     [+] Inserting data
+2023-12-15 12:47:45 INFO     [+] Cleaning unused objects
+2023-12-15 12:47:45 INFO     [+] Loading ruleset from : OldTestData/rules/rules_windows_generic_full.json
+2023-12-15 12:47:45 INFO     [+] Executing ruleset - 2531 rules
+2023-12-15 12:47:45 DEBUG        - Windows Defender Threat Detected [high] : 11 events
+2023-12-15 12:47:45 INFO     [+] Results written in : detected_events.json
+2023-12-15 12:47:45 INFO     [+] Cleaning
+2023-12-15 12:47:45 INFO     
+Finished in 0 seconds

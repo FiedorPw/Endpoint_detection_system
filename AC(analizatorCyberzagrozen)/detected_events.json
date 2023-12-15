@@ -64,7 +64,7 @@
       "Task": 0,
       "SystemTime": "2019-07-18T20:40:00.730676Z",
       "Version": 0,
-      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-42F0VYK8.json"
+      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-9ZILBMWC.json"
     },
     {
       "row_id": 2,
@@ -117,7 +117,7 @@
       "Task": 0,
       "SystemTime": "2019-07-18T20:40:16.396422Z",
       "Version": 0,
-      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-42F0VYK8.json"
+      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-9ZILBMWC.json"
     },
     {
       "row_id": 3,
@@ -170,7 +170,7 @@
       "Task": 0,
       "SystemTime": "2019-07-18T20:41:16.418508Z",
       "Version": 0,
-      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-42F0VYK8.json"
+      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-9ZILBMWC.json"
     },
     {
       "row_id": 4,
@@ -223,7 +223,7 @@
       "Task": 0,
       "SystemTime": "2019-07-18T20:41:17.508276Z",
       "Version": 0,
-      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-42F0VYK8.json"
+      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-9ZILBMWC.json"
     },
     {
       "row_id": 5,
@@ -276,7 +276,7 @@
       "Task": 0,
       "SystemTime": "2019-07-18T20:41:48.236136Z",
       "Version": 0,
-      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-42F0VYK8.json"
+      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-9ZILBMWC.json"
     },
     {
       "row_id": 7,
@@ -329,7 +329,7 @@
       "Task": 0,
       "SystemTime": "2019-07-18T20:51:50.798994Z",
       "Version": 0,
-      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-42F0VYK8.json",
+      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-9ZILBMWC.json",
       "ActivityID": "40013F0F-EF76-4940-A8B2-4DE50BE9AAC3"
     },
     {
@@ -383,7 +383,7 @@
       "Task": 0,
       "SystemTime": "2019-07-18T20:51:50.275470Z",
       "Version": 0,
-      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-42F0VYK8.json",
+      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-9ZILBMWC.json",
       "RemediationUser": "NT AUTHORITY\\SYSTEM",
       "ActivityID": "6E1A750F-42C6-491E-941A-12F6AF57EBD2"
     },
@@ -438,7 +438,7 @@
       "Task": 0,
       "SystemTime": "2019-07-18T20:53:31.900809Z",
       "Version": 0,
-      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-42F0VYK8.json",
+      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-9ZILBMWC.json",
       "RemediationUser": "NT AUTHORITY\\SYSTEM",
       "ActivityID": "2AD0CF94-C382-4568-A488-1253A4ED0F54"
     },
@@ -493,7 +493,7 @@
       "Task": 0,
       "SystemTime": "2019-07-18T20:53:31.902610Z",
       "Version": 0,
-      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-42F0VYK8.json",
+      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-9ZILBMWC.json",
       "RemediationUser": "NT AUTHORITY\\SYSTEM",
       "ActivityID": "2AD0CF94-C382-4568-A488-1253A4ED0F54"
     },
@@ -548,7 +548,7 @@
       "Task": 0,
       "SystemTime": "2019-07-18T20:53:31.905406Z",
       "Version": 0,
-      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-42F0VYK8.json",
+      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-9ZILBMWC.json",
       "RemediationUser": "NT AUTHORITY\\SYSTEM",
       "ActivityID": "2AD0CF94-C382-4568-A488-1253A4ED0F54"
     },
@@ -603,7 +603,7 @@
       "Task": 0,
       "SystemTime": "2019-07-18T20:53:31.952568Z",
       "Version": 0,
-      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-42F0VYK8.json",
+      "OriginalLogfile": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx-9ZILBMWC.json",
       "RemediationUser": "NT AUTHORITY\\SYSTEM",
       "ActivityID": "2AD0CF94-C382-4568-A488-1253A4ED0F54"
     }
