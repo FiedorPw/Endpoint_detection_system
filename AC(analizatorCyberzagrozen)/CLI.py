@@ -19,6 +19,7 @@ def my_app():
 @my_app.command()
 @click.option('--path','-p', help='Path to rules',show_default=True,type=click.Path(exists=True),nargs=1,default='offline_analyzer/detection-rules.py',required=False)
 def load_python_rules(path):
+    """Load python rules"""
     global python_rules
     print("Loading rules")
     python_rules = AN.load_rules(path)
@@ -28,6 +29,7 @@ def load_python_rules(path):
 @my_app.command()
 @click.option('--load-rules',help='Path to rules to load',type=click.Path(exists=True),nargs=1,required=False)
 def show_python_rules(load_rules):
+    """show loaded python rules"""
     if load_rules is not None:
         print("Loading rules")
         global python_rules
@@ -45,7 +47,8 @@ def show_python_rules(load_rules):
 @click.option('--path','-p', prompt='Path to scan',help='Path to scan',type=click.Path(exists=True),nargs=1,required=True)
 @click.option('--load-rules',help='Path to rules to load',type=click.Path(exists=True),nargs=1,required=False)
 @click.option('--rule-name',help='name of rule to load',nargs=1,required=False)
-def use_python_rule(path,load_rules,rule_name):
+def run_python_rules(path,load_rules,rule_name):
+    """Run python rules"""
     if load_rules is not None:
         print("Loading rules")
         global python_rules
@@ -63,8 +66,8 @@ def use_python_rule(path,load_rules,rule_name):
 @click.option('--pattern',prompt='Pattern to search',help='Pattern to search')
 @click.option('--file_paths',prompt='Path to file',help='Path to file', nargs=1, type=click.Path(exists=True))
 def grep_command(pattern, file_paths):
-    file_path = {file_paths}
     """Search for PATTERN in each FILE_PATH using grep."""
+    file_path = {file_paths}
     results = TLA.grep_in_files(pattern, file_path)
     print(results)
 
@@ -82,6 +85,9 @@ def regex_command(pattern, file_paths):
 @click.option('--evt_log_path',help='Path to evt file to load',prompt='Path to evt file to load',type=click.Path(exists=True),nargs=1,required=True)
 @click.option('--sigma_rules_path',help='Path to rules to load',prompt='Path to rules to load',type=click.Path(exists=True),nargs=1,required=True)
 def sigma_evtx(evt_log_path, sigma_rules_path):
+    """
+    Run SIGMA rules on EVTX log file
+    """
     SIGMA.run_zircolite_evtx(evt_log_path, sigma_rules_path)
     SIGMA.display_event_data("detected_events.json")
 
@@ -89,6 +95,9 @@ def sigma_evtx(evt_log_path, sigma_rules_path):
 @click.option('--json_log_path',help='Path to json file to load',prompt='Path to json file to load',type=click.Path(exists=True),nargs=1,required=True)
 @click.option('--sigma_rules_path',help='Path to rules to load',prompt='Path to rules to load',type=click.Path(exists=True),nargs=1,required=True)
 def sigma_json(json_log_path, sigma_rules_path):
+    """
+    Run SIGMA rules on json log file
+    """
     SIGMA.run_zircolite_json(json_log_path, sigma_rules_path)
     SIGMA.display_event_data("detected_events.json")
 
@@ -107,7 +116,7 @@ def display_events_command(events):
 @click.option('--display_filter', prompt='Enter BPF display filter (press Enter for no filter)',help='Enter BPF display filter', default="")
 def analyze_pcap_interactive(pcap_path, display_filter):
     """
-    Click command to interactively analyze a PCAP file with filter options.
+    Interactively analyze a PCAP file with filter options.
     """
     click.echo("Welcome to interactive PCAP analysis!")
     # Get the list of available PCAP files
