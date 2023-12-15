@@ -29,6 +29,7 @@ info: read_txt_file read file
 info: Analyzing PCAP file: Network.pcap
 info: import_pcap read file
 info: read_json_file read file
+info: mail@mail.com
 info: read_xml_file read file
 info: read_txt_file read file
 info: Analyzing PCAP file: Network.pcap

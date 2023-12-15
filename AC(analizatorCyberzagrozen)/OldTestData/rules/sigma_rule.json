@@ -1,0 +1,25 @@
+[
+{
+    "title": "Command Line Interface Started",
+    "id": "14d9f307-a56e-43d8-8e8c-4e747c769c50",
+    "status": "experimental",
+    "description": "Detects when a command line interface process is started",
+    "references": [
+        "https://example.com/sigma/rule"
+    ],
+    "logsource": {
+        "product": "windows",
+        "service": "security"
+    },
+    "detection": {
+        "selection": {
+            "EventID": 4688
+        },
+        "condition": "selection"
+    },
+    "falsepositives": [
+        "Unknown"
+    ],
+    "level": "low"
+}]
+
