@@ -12,6 +12,16 @@ syslog.
 import importlib.util
 import os
 
+def show_rules(rules_module):
+    for rule_name in dir(rules_module):
+        if not rule_name.startswith("__") and not rule_name.endswith("__"):
+            print(rule_name)
+def count_rules(rules_module):
+    count = 0
+    for rule_name in dir(rules_module):
+        if not rule_name.startswith("__") and not rule_name.endswith("__"):
+            count = count + 1
+    return count
 def load_rules(file_path):
     spec = importlib.util.spec_from_file_location("detection_rules", file_path)
     detection_rules = importlib.util.module_from_spec(spec)
