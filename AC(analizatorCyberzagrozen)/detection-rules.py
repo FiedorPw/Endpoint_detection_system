@@ -66,7 +66,6 @@ def example_remote_rule(**kwargs):
 
 def check_for_prohibited_ips(**kwargs):
     import Evtx.Evtx as evtx
-    import nest_asyncio
     import pyshark
     import re
     import os
@@ -90,18 +89,16 @@ def check_for_prohibited_ips(**kwargs):
     
     for scanned_pcap in kwargs.get('pcap', []):
         found_ips = []
-        try:
-            packets = packet_analyzer.FileCapture(scanned_pcap)
-            for packet in packets:
-                if "IP" in packet:
-                    for ip in [packet["IP"].destination, packet["IP"].source]:
-                        if ip not in found_ips and ip in prohibited_ips:
-                            detected = True
-                            blocked_ips.append(ip)
-                            details += f"Prohibited IP {ip} found in file {scanned_pcap}\n"
-                            found_ips.append(ip)
-        except Exception:
-            pass
+        packets = pyshark.FileCapture(scanned_pcap)
+        for packet in packets:
+            if hasattr(packet, "IP") and hasattr(packet["IP"], "dst") and hasattr(packet["IP"], "src"):
+                for ip in [packet["IP"].dst, packet["IP"].src]:
+                    if ip not in found_ips and ip in prohibited_ips:
+                        detected = True
+                        blocked_ips.append(ip)
+                        details += f"Prohibited IP {ip} found in file {scanned_pcap}\n"
+                        found_ips.append(ip)
+
     
     for scanned_txt in kwargs.get('txt', []) + kwargs.get('json', [])+ kwargs.get('xml', []):
         try:
