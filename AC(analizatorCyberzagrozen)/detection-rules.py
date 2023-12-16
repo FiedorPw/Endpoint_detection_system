@@ -1,26 +1,3 @@
-'''
-FF.DETPY.1.2 Każda reguła ma być zdefiniowana jako oddzielna funkcja w języku Python we
-wskazanym pliku w OFF.DETPY.1.1 . Format pojedynczej reguły:def nazwa_funkcji_reguly(**kwargs):
-# ciało funkcji - właściwa reguła operująca na danych z args
-# procesowanie pcap
-# for pcap in kwargs[pcap]:
-# procesowanie evtx
-# for evtx in kwargs[evtx]:
-# procesowanie xml
-# for xml in kwargs[xml]:
-# procesowanie json
-# for json in kwargs[json]:
-# procesowanie txt
-# for txt in kwargs[txt]:
-# ostateczna reguła - tj. co ma się wykonać
-if condition=True:
-action_alert = "..." # akcja: "local", "remote"
-description = "Alert ..."
-else:
-action_alert = None
-description = None
-return action_alert, description
-'''
 def example_local_rule(**kwargs):
     condition = False
     # Function body - rule operating on data from kwargs
@@ -86,3 +63,77 @@ def example_remote_rule(**kwargs):
         action_alert = None
         description = None
     return action_alert, description
+
+def check_for_prohibited_ips(**kwargs):
+    import Evtx.Evtx as evtx
+    import nest_asyncio
+    import pyshark
+    import re
+    import os
+    directory_path = os.path.dirname(__file__)
+    file_path = os.path.join(directory_path, "list_of_prohibited_ips")
+    
+    try:
+        ip_file = open(file_path, "r")
+        prohibited_ips = ip_file.read().splitlines()
+        print(f"Searching for Prohibited IPs: {prohibited_ips}")
+    except FileNotFoundError:
+        print('Prohibitet Ip list not found, create "list_of_prohibited_ips" file')
+        return
+
+    alert_action = "remote"
+    blocked_ips = []
+    details = ""
+    detected = False
+
+    ip_pattern = re.compile(r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}")
+    
+    for scanned_pcap in kwargs.get('pcap', []):
+        found_ips = []
+        try:
+            packets = packet_analyzer.FileCapture(scanned_pcap)
+            for packet in packets:
+                if "IP" in packet:
+                    for ip in [packet["IP"].destination, packet["IP"].source]:
+                        if ip not in found_ips and ip in prohibited_ips:
+                            detected = True
+                            blocked_ips.append(ip)
+                            details += f"Prohibited IP {ip} found in file {scanned_pcap}\n"
+                            found_ips.append(ip)
+        except Exception:
+            pass
+    
+    for scanned_txt in kwargs.get('txt', []) + kwargs.get('json', [])+ kwargs.get('xml', []):
+        try:
+            content = open(scanned_txt, mode="r").read()
+            ip_list = list(set(ip_pattern.findall(content)))
+            for ip in ip_list:
+                if ip in prohibited_ips:
+                    detected = True
+                    blocked_ips.append(ip)
+                    details += f"Prohibited IP {ip} found in file {scanned_txt}\n"
+        except Exception:
+            pass
+    
+    for scanned_evtx in kwargs.get('evtx', []):
+        event_data = ""
+        try:
+            with evtx.EventFile(scanned_evtx) as event_log:
+                for record in event_log.records():
+                    for item in record.xml():
+                        event_data += item
+                ip_list = list(set(ip_pattern.findall(event_data)))
+                for ip in ip_list:
+                    if ip in prohibited_ips:
+                        detected = True
+                        blocked_ips.append(ip)
+                        details += f"Prohibited IP {ip} found in file {scanned_evtx}\n"
+        except Exception:
+            pass
+
+    if not detected:
+        alert_action = None
+        blocked_ips = None
+        details = None
+
+    return alert_action, details

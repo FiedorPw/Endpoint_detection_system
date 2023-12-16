@@ -16,12 +16,14 @@ from logger import Logger
 
 def show_rules(rules_module):
     for rule_name in dir(rules_module):
-        if not rule_name.startswith("__") and not rule_name.endswith("__"):
+        rule_function = getattr(rules_module, rule_name)
+        if callable(rule_function):
             print(rule_name)
 def count_rules(rules_module):
     count = 0
     for rule_name in dir(rules_module):
-        if not rule_name.startswith("__") and not rule_name.endswith("__"):
+        rule_function = getattr(rules_module, rule_name)
+        if callable(rule_function):
             count = count + 1
     return count
 def load_rules(file_path):
