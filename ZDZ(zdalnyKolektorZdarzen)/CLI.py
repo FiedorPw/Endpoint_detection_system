@@ -27,7 +27,7 @@ def my_app():
 @my_app.command()
 @click.option('--cli','-c', 'cli_argument', is_flag=True,help='print logs to cli as they come from network client',show_default=True)
 @click.option('--db','-d', 'db_argument',is_flag=True,help='forward received logs to database',show_default=True)
-def recive_logs(cli_argument,db_argument):
+def receive_logs(cli_argument,db_argument):
 
     # odpalenie serwera flask w innym wątku aby mogły działać obok cli
     thread = threading.Thread(target=networkServer.run())
