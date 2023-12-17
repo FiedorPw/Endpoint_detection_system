@@ -12,7 +12,7 @@ from logger import Logger
 
 Logger("krycy-tool.log")
 
-@shell(prompt='my-app > ', intro='Starting my app...')
+@shell(prompt='AC> ', intro='Starting my app...')
 def my_app():
     pass
 

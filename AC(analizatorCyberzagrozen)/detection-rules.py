@@ -31,34 +31,64 @@ def example_local_rule(**kwargs):
         description = None
     return action_alert, description
 
+#wywala eroor
+# AttributeError: 'str' object has no attribute 'highest_layer'
+
+# def detect_network_scanning(**kwargs):
+#     import PCAP_analyzer
+#     # Process pcap
+#     number_of_detected_scans = 0
+#     message = "co sie dzieje"
+#     for pcap in kwargs.get('pcapng', []):
+#         print(pcap)
+#         message, number_of_detected_scans = PCAP_analyzer.detectNetworkScanning(pcap)
+#         print(message,"massege")
+#         print(number_of_detected_scans,"number of detected scans")
+#
+#     for pcap in kwargs.get('pcap', []):
+#         print(pcap)
+#         message, number_of_detected_scans = PCAP_analyzer.detectNetworkScanning(pcap)
+#         print(message,"massege")
+#         print(number_of_detected_scans,"number of detected scans")
+#
+#     # Final rule - what needs to be executed
+#     if number_of_detected_scans > 0:
+#         #BEDZIE REMOTE
+#         action_alert = "local"  # action: "local", "remote"
+#         description = message
+#     else:
+#         action_alert = None
+#         description = None
+#     return action_alert, description
+
 def example_remote_rule(**kwargs):
     condition = False
     # Function body - rule operating on data from kwargs
     # Process pcap
-    #for pcap in kwargs.get('pcap', []):
-        # Processing logic for pcap files
+    # for pcap in kwargs.get('pcap', []):
+    # Processing logic for pcap files
 
     # Process evtx
-    for evtx in kwargs.get('evtx', []):
-        condition = True
-        # Processing logic for evtx files
+    # for evtx in kwargs.get('evtx', []):
+    # Processing logic for evtx files
 
     # Process xml
-    #for xml in kwargs.get('xml', []):
-        # Processing logic for xml files
+    # for xml in kwargs.get('xml', []):
+    # Processing logic for xml files
 
     # Process json
-    #for json_file in kwargs.get('json', []):
+    for json_file in kwargs.get('json', []):
+        condition = True
         # Processing logic for json files
 
     # Process txt
-    #for txt in kwargs.get('txt', []):
-        # Processing logic for txt files
+    # for txt in kwargs.get('txt', []):
+    # Processing logic for txt files
 
     # Final rule - what needs to be executed
     if condition:
-        action_alert = "remote"  # action: "local", "remote"
-        description = "Alert evts file found"
+        action_alert = "local"  # action: "local", "remote"
+        description = "Alert json files found"
     else:
         action_alert = None
         description = None
@@ -71,7 +101,7 @@ def check_for_prohibited_ips(**kwargs):
     import os
     directory_path = os.path.dirname(__file__)
     file_path = os.path.join(directory_path, "list_of_prohibited_ips")
-    
+
     try:
         ip_file = open(file_path, "r")
         prohibited_ips = ip_file.read().splitlines()
@@ -80,13 +110,14 @@ def check_for_prohibited_ips(**kwargs):
         print('Prohibitet Ip list not found, create "list_of_prohibited_ips" file')
         return
 
+    #remote or local
     alert_action = "remote"
     blocked_ips = []
     details = ""
     detected = False
 
     ip_pattern = re.compile(r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}")
-    
+
     for scanned_pcap in kwargs.get('pcap', []):
         found_ips = []
         packets = pyshark.FileCapture(scanned_pcap)
@@ -99,7 +130,7 @@ def check_for_prohibited_ips(**kwargs):
                         details += f"Prohibited IP {ip} found in file {scanned_pcap}\n"
                         found_ips.append(ip)
 
-    
+
     for scanned_txt in kwargs.get('txt', []) + kwargs.get('json', [])+ kwargs.get('xml', []):
         try:
             content = open(scanned_txt, mode="r").read()
@@ -111,7 +142,7 @@ def check_for_prohibited_ips(**kwargs):
                     details += f"Prohibited IP {ip} found in file {scanned_txt}\n"
         except Exception:
             pass
-    
+
     for scanned_evtx in kwargs.get('evtx', []):
         event_data = ""
         try:

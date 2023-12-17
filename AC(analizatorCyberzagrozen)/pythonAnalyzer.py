@@ -9,6 +9,7 @@ description - opis tekstowy według przyjętego formatu, może to być także JS
 syslog.
 '''
 
+from Log import Log
 import importlib.util
 import os
 import networkClient as nc
@@ -39,6 +40,7 @@ def process_files_with_rules(rules_module, folder_path,rule_name_to_use=None):
             file_extension = os.path.splitext(filename)[1][1:]
             files.setdefault(file_extension, []).append(os.path.join(root, filename))
 
+
     # Execute rules on the collected files
     for rule_name in dir(rules_module):
         if rule_name_to_use is None or rule_name_to_use == rule_name:
@@ -49,7 +51,10 @@ def process_files_with_rules(rules_module, folder_path,rule_name_to_use=None):
                 if action_alert:
                     Logger.output(f"Rule: {rule_name}, Action: {action_alert}, Description: {description}")
                     if action_alert == "remote":
-                        nc.sendRuleDetection(rule_name=rule_name,description=description)
+                        log = Log(rule_name,description)
+                        json_log = log.to_json()
+                        nc.sendLogObject(json_log)
+
                         # Log information locally and send information via REST API
                 else:
                     print("No action needed for this rule.")

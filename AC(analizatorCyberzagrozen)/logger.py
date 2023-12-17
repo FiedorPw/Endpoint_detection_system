@@ -12,3 +12,4 @@ class Logger:
                 string = string + " " + str(arg)
             file.write(string + "\n")
             print(string)
+            return string

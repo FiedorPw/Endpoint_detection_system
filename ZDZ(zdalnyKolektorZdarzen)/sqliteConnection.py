@@ -1,4 +1,28 @@
 import sqlite3
+import Logs
+
+def insert_log_db(logs: Logs):
+    # Ustanowienie połączenia z bazą danych SQLite
+    conn = sqlite3.connect('SQLite_Python.db')
+    log_cursor = conn.cursor()
+
+    # Dodawanie trzech rekordów do tabeli 'logs'
+    records = [
+        (logs.rule,),
+        (logs.description,),
+        (logs.time,)
+    ]
+
+    """Insert a Log instance into the logs table."""
+    sql = '''INSERT INTO logs (rules, descriptions, times) 
+               VALUES (?, ?, ?)'''
+    log_cursor.execute(sql, (logs.rule, logs.description, logs.time))
+    conn.commit()
+    conn.close()
+    return log_cursor.lastrowid
+
+
+
 
 try:
     sqliteConnection = sqlite3.connect('SQLite_Python.db')
@@ -14,6 +38,9 @@ try:
     cursor.execute(sqlite_select_Query)
     record = cursor.fetchall()
     print("SQLite Database Version is: ", record)
+
+
+
 
     cursor.execute("")
     cursor.close()

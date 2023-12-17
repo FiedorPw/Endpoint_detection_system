@@ -18,3 +18,5 @@ TO DO
 6.sprawozdanie (z wnioskami)
 
 
+load-python-rules
+run-python-rules -p OldTestData
