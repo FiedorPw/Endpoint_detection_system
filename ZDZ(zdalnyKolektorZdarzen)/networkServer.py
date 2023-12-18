@@ -20,23 +20,11 @@ def recive_log():
     # Implement logic to create a new item
     json_string = request.json
     print(json_string,"\n")
-
     json_str_corrected = json_string.replace('\n', '\\n')
-
-    # Create an instance of Log from the corrected JSON string
-
     log = Logs.from_json(json_str_corrected)
     test_string = log.rule
     print(log.rule,log.description, log.time)
     sqliteConnection.insert_log_db(log)
-
-    # print("jestem przed ifem")
-    # print(CLI.print_to_cli, CLI.save_to_db)
-    # if CLI.print_to_cli:
-    #     # Output the deserialized object
-    # if CLI.save_to_db:
-    #     print("niby zapis do bazy tututut")
-
     return jsonify(json_string), 201
 
 if __name__ == '__main__':
